@@ -24,7 +24,7 @@ class MainController extends Controller
 {
     public function contacts(Request $request){
 
-        $contacts = Contact::create($request->all());
+        $contacts = Contact::all();
          
         return responseJson(1 , 'successs' , $contacts);
     
